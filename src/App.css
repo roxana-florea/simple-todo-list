@@ -1,38 +1,97 @@
+* {
+  background-color: #4793dc;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin-top: 8%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid black;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  background-color: #f5a3ce;
+  =box-shadow: 2px 4px 6px #444;
+  -moz-box-shadow: 2px 4px 6px #444;
+  -webkit-box-shadow: 2px 4px 6px #444;
+  transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
 }
 
-.App-link {
-  color: #61dafb;
+.input,
+label {
+  background-color: #f5a3ce;
+  padding: 5px;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  background-color: white;
+  height: 20px;
+}
+
+.btn {
+  background-color: #aa9fc4;
+}
+button {
+  background-color: #aac6a2;
+  padding: 5px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.todoList {
+  margin-top: 100px;
+  width: 500px;
+  height: 300px;
+  background-color: #ffec7b;
+  border: 1px solid black;
+  box-shadow: 2px 4px 6px #444;
+  -moz-box-shadow: 2px 4px 6px #444;
+  -webkit-box-shadow: 2px 4px 6px #444;
+  transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+}
+
+.todoList li {
+  background-color: #ffec7b;
+  list-style-type: none;
+  font-family: "Architects Daughter", cursive;
+}
+
+.todoList ul {
+  background-color: #ffec7b;
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  font-family: "Architects Daughter", cursive;
+}
+
+label {
+  font-family: "Architects Daughter", cursive;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.noline {
+  text-decoration: none;
 }
