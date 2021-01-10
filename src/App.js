@@ -51,6 +51,7 @@ class App extends Component {
           <div className="input">
             <label htmlFor="todo">Add TODO : </label>
             <input
+            placeholder='start typing...'
               name="todo"
               value={this.state.text}
               onChange={this.addText}
